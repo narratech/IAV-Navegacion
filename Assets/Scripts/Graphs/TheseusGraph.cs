@@ -1,17 +1,10 @@
 ﻿/*    
-    Obra original:
-        Copyright (c) 2018 Packt
-        Unity 2018 Artificial Intelligence Cookbook - Second Edition, by Jorge Palacios
-        https://github.com/PacktPublishing/Unity-2018-Artificial-Intelligence-Cookbook-Second-Edition
-        MIT License
-
-    Modificaciones:
-        Copyright (C) 2020-2023 Federico Peinado
-        http://www.federicopeinado.com
-
-        Este fichero forma parte del material de la asignatura Inteligencia Artificial para Videojuegos.
-        Esta asignatura se imparte en la Facultad de Informática de la Universidad Complutense de Madrid (España).
-        Contacto: email@federicopeinado.com
+   Copyright (C) 2020-2023 Federico Peinado
+   http://www.federicopeinado.com
+   Este fichero forma parte del material de la asignatura Inteligencia Artificial para Videojuegos.
+   Esta asignatura se imparte en la Facultad de Informática de la Universidad Complutense de Madrid (España).
+   Autor: Federico Peinado 
+   Contacto: email@federicopeinado.com
 */
 using UCM.IAV.Movimiento;
 using UnityEngine;
