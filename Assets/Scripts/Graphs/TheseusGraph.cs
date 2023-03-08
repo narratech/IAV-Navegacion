@@ -16,6 +16,7 @@ namespace UCM.IAV.Navegacion
 
 
     // Posibles algoritmos para buscar caminos en grafos
+    // REALMENTE PARA ESTA PRÁCTICA SÓLO SE NECESITA ASTAR, los otros no los usaremos...
     public enum TesterGraphAlgorithm
     {
         BFS, DFS, ASTAR

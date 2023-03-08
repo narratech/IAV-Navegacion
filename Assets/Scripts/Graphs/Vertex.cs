@@ -12,16 +12,17 @@ namespace UCM.IAV.Navegacion
     using System;
 
     // Puntos representativos o vértice (común a todos los esquemas de división, o a la mayoría de ellos)
+    // En el pseudocódigo de Millington se habla más bien de NodeRecord, en vez de Vertex y además de guardar el id del nodo y el coste f, se guarda el del padre y también el coste g
     [System.Serializable]
     public class Vertex : MonoBehaviour, IComparable<Vertex>
     {
         /// <summary>
-        /// Identificador del vértice 
+        /// Identificador del vértice/nodo 
         /// </summary>
         public int id;
 
         /// <summary>
-        /// Coste del vértice 
+        /// Coste (total estimado) del vértice 
         /// </summary>
         public float cost;
 
@@ -41,6 +42,11 @@ namespace UCM.IAV.Navegacion
             Vertex other = (Vertex)obj;
             if (ReferenceEquals(obj, null)) return false;
             return (other.id == this.id);
+        }
+
+        public override int GetHashCode()
+        {
+            return this.id.GetHashCode();
         }
     }
 }

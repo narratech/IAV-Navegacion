@@ -18,6 +18,8 @@ namespace UCM.IAV.Navegacion
     /// </summary>
     public abstract class Graph : MonoBehaviour
     {
+        // Aquí el grafo entero es representado con estas listas, que luego puede aprovechar el algoritmo A*.
+        // El pseudocódigo de Millington no asume que tengamos toda la información del grafo representada y por eso va guardando registros de los nodos que visita.
         public GameObject vertexPrefab;
         protected List<Vertex> vertices;
         protected List<List<Vertex>> neighbourVertex;
