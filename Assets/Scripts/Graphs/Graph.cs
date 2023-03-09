@@ -29,6 +29,8 @@ namespace UCM.IAV.Navegacion
         protected int numCols, numRows;
 
         // this is for informed search like A*
+        // Un delegado especifica la cabecera de una función, la que sea, que cumpla con esos parámetros y devuelva ese tipo.
+        // Cuidado al implementarlas, porque no puede ser que la distancia -por ejemplo- entre dos casillas tenga una heurística más cara que el coste real de navegar de una a otra.
         public delegate float Heuristic(Vertex a, Vertex b);
 
         // Used for getting path in frames
