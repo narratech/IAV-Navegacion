@@ -68,10 +68,31 @@ namespace UCM.IAV.Movimiento
             FindGO();
         }
 
-        private void OnLevelWasLoaded(int level)
+        // Lo primero que se llama al activarse (tras el Awake)
+        void OnEnable()
+        {
+
+            // No necesito este delegado
+            //SceneManager.activeSceneChanged += OnSceneWasSwitched;
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+
+        // Delegado para hacer cosas cuando una escena termina de cargar (no necesariamente cuando ha cambiado/switched)
+        // Antiguamente se usaba un método del SceneManager llamado OnLevelWasLoaded(int level), ahora obsoleto
+        void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             FindGO();
+
         }
+
+
+        // Se llama cuando el juego ha terminado
+        void OnDisable()
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
 
         // Update is called once per frame
         void Update()
