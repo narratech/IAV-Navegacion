@@ -1,7 +1,14 @@
-# **IAV - Navegación**
+# Hamelin - Base
+Proyecto de videojuego actualizado a **Unity 2022.3.57f1** diseñador para servir como punto de partida en algunas prácticas.
 
-## Replica el formato de documentación habitual
+Consiste en un entorno virtual 3D que representa el pueblo de Hamelín, un personaje controlable por el jugador que es el flautista de Hamelín, un perro compañero y un montón de ratas preparadas para controlarse con IA.
 
-Hay quien implementa el A* con una estructura de registro de nodo muy simple (el identificador del nodo y el coste f), sólo usa lista de apertura, se apoya en tener toda la información completa del grafo a mano (costes incluidos) y como estructura de datos auxiliar usa una cola de prioridad muy simple.
+## Licencia
+Federico Peinado, autor de la documentación, código y recursos de este trabajo, concedo permiso permanente a los alumnos de la Facultad de Informática de la Universidad Complutense de Madrid para utilizar este material, con sus comentarios y evaluaciones, con fines educativos o de investigación; ya sea para obtener datos agregados de forma anónima como para utilizarlo total o parcialmente reconociendo expresamente mi autoría.
 
-Según el pseudocódigo que plantea Millington, la estructura de registro de nodo es más rica (identificador del nodo, conexión con el nodo padre, coste g y coste f), se usa una lista de apertura y una lista de cierre, no se asume que toda la información del grafo esté disponible y la cola de prioridad se implementa con BinaryHeap.
+## Referencias
+Los recursos de terceros utilizados son de uso público.
+* *AI for Games*, Ian Millington.
+* [Kaykit Medieval Builder Pack](https://kaylousberg.itch.io/kaykit-medieval-builder-pack)
+* [Kaykit Dungeon](https://kaylousberg.itch.io/kaykit-dungeon)
+* [Kaykit Animations](https://kaylousberg.itch.io/kaykit-animations)
